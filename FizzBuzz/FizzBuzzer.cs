@@ -10,6 +10,10 @@ namespace FizzBuzz
     {
         public string Get(int num)
         {
+            if (IsMultipleOf3(num) && IsMultipleOf5(num))
+            {
+                return "FizzBuzz";
+            }
             if (IsMultipleOf3(num))
             {
                 return "Fizz";
